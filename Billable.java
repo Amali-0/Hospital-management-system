@@ -1,3 +1,4 @@
-public interface Billable {
-    void generateInvoice();
+// 2. Billable.java
+interface Billable {
+    double calculateBill();
 }

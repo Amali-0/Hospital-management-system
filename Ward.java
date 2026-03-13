@@ -1,12 +1,14 @@
- public class Ward extends Facility {
-    private int roomNumber;
+// 7. Ward.java
+class Ward extends Facility {
+    private int capacity;
 
-    public Ward(String location, int roomNumber) {
-        super(location);
-        this.roomNumber = roomNumber;
+    public Ward(String name, int capacity) {
+        super(name);
+        this.capacity = capacity;
     }
 
-    public void showWardDetails() {
-        System.out.println("Ward Room: " + roomNumber + " located in " + getLocation());
+    @Override
+    public void showFacilityInfo() {
+        System.out.println("Ward Name: " + getFacilityName() + " | Capacity: " + capacity + " beds.");
     }
 }

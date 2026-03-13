@@ -1,3 +1,4 @@
-public interface MedicalStaff {
-    void performDuties();
+// 1. MedicalStaff.java
+interface MedicalStaff {
+    void provideTreatment();
 }

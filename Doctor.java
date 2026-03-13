@@ -1,18 +1,20 @@
-public class Doctor extends Person implements MedicalStaff {
+// 5. Doctor.java
+class Doctor extends Person implements MedicalStaff {
     private String specialty;
 
-    public Doctor(String id, String name, String specialty) {
-        super(id, name); // Requirement: use of 'super'
+    public Doctor(String name, int id, String specialty) {
+        super(name, id);
         this.specialty = specialty;
     }
 
     @Override
-    public void showDetails() { // Requirement: Method Overriding
-        System.out.println("Doctor: " + getName() + " | Specialty: " + specialty);
+    public void provideTreatment() {
+        System.out.println("Doctor " + getName() + " is providing specialized treatment in " + specialty + ".");
     }
 
     @Override
-    public void performDuties() {
-        System.out.println(getName() + " is currently examining patients.");
+    public void displayDetails() {
+        System.out.println("Doctor ID: " + getId() + " | Name: " + getName() + " | Specialty: " + specialty);
     }
 }
+

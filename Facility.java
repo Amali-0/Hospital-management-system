@@ -1,9 +1,11 @@
-public abstract class Facility {
-    private String location;
+// 4. Facility.java
+abstract class Facility {
+    private String facilityName;
 
-    public Facility(String location) {
-        this.location = location;
+    public Facility(String facilityName) {
+        this.facilityName = facilityName;
     }
 
-    public String getLocation() { return location; }
+    public String getFacilityName() { return facilityName; }
+    public abstract void showFacilityInfo();
 }
